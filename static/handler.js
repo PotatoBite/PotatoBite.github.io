@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$("#code_description").load("code_description.txt");
+$("#code_description").load("static/code_description.txt");
 
 
 });
