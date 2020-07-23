@@ -2,3 +2,4 @@
 -cambiar los files para los CDNs en produccion, y local en desarrollo
 -cuentas en redes sociales
 -las quotes arreglar el -A- antes del autor y los signos de puntuacion
+-fix movile view menu
