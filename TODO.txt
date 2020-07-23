@@ -3,3 +3,4 @@
 -cambiar los iconos de posicion
 -cambiar el fondo
 -cambiar los files para los CDNs en produccion, y local en desarrollo
+-cuentas en redes sociales

@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     for (i = 0; i < temp_sections.length; i++) {
         var sectionOBJ = $("#section").clone(true);
-        setSection($(sectionOBJ), temp_sections[i].split('---'));
+        setSection($(sectionOBJ), temp_sections[i].split('---'), i % 2 == 0);
         $(sectionOBJ).insertAfter($('#section:last')).show();
     }
 
@@ -29,7 +29,11 @@ function getSections(url) {
     return tmp;
 };
 
-function setSection(object, data) {
+function setSection(object, data, even = False) {
+
+    if (!even) {
+        $(object).find("#icon-container").addClass("w3-right").find("#icon").addClass(data[0]); //hacer algo q no sea buscar de nuevo en el dom
+    } else $(object).find("#icon").addClass(data[0]);
     $(object).find("#title").html(data[1]);
     $(object).find("#description").html(data[2]);
     $(object).find("#text").html(data[3]);
