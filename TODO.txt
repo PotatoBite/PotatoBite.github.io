@@ -1,0 +1,5 @@
+-pero falta hacer q cambien los iconos
+-q el orden sea el mismo q en el txt
+-cambiar los iconos de posicion
+-cambiar el fondo
+-cambiar los files para los CDNs en produccion, y local en desarrollo
