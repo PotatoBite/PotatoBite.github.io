@@ -1,5 +1,4 @@
--q el orden sea el mismo q en el txt
 -cambiar los files para los CDNs en produccion, y local en desarrollo
 -cuentas en redes sociales
--las quotes arreglar el -A- antes del autor y los signos de puntuacion
 -fix movile view menu
+-fix icon
