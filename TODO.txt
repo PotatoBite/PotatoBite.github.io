@@ -1,4 +1,4 @@
 -cambiar los files para los CDNs en produccion, y local en desarrollo
 -cuentas en redes sociales
--fix movile view menu
+-fix movile view menu UPDT: almost done
 -fix icon
