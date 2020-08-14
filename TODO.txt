@@ -2,3 +2,4 @@
 -cuentas en redes sociales
 -fix movile view menu UPDT: almost done
 -fix icon
+-a veces sale una frase en blanco
