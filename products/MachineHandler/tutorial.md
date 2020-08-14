@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blogging Like a Hacker
+permalink: /products/MachineHandler/tutorial
 ---
 # How to use Markdown
 

@@ -3,3 +3,6 @@
 -fix movile view menu UPDT: almost done
 -fix icon
 -a veces sale una frase en blanco
+-usar un archivo externo con las direcciones pa los links 
+-usar los _includes de jekyll
+-cambiar los estilos de los MD
