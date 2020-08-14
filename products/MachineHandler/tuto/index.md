@@ -1,3 +1,7 @@
+---
+layout: post
+title: Blogging Like a Hacker
+---
 # How to use Markdown
 
 Markdown is a lightweight markup language which can be easily converted to
