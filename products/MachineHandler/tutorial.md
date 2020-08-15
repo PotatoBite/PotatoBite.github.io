@@ -2,12 +2,11 @@
 layout: post
 title: MachineHandler
 permalink: /products/MachineHandler/tutorial
+markdown.toc: true
 ---
 # Help
 
 A [PotatoBite](https://PotatoBite.github.io)'s product. All rights reserved.
-
-[TOC]
 
 * TOC
 {:toc}
