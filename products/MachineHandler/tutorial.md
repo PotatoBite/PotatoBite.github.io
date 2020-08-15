@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Blogging Like a Hacker
+title: MachineHandler
 permalink: /products/MachineHandler/tutorial
 ---
-# MachineHandler Help
+# Help
 
 A [PotatoBite](https://PotatoBite.github.io)'s product. All rights reserved.
 
@@ -79,7 +79,7 @@ Adding a Linac is as simple as clicking the `Add Linac` button after selecting t
 
 #### The Machine Info Dialog ####
 
-![](/home/elekta/Desktop/PotatoBite.github.io/products/MachineHandler/tuto/res/machine_info.png)
+!["MachineInfo"](./res/machine_info.png)
 
 > Note: Be sure of using **UNIQUES IDs** for your Linac since they are indexed using this property in the database.
 
@@ -96,7 +96,7 @@ The fields must match the following properties to be accepted.
 | Custom Model     | Define a custom model name if available don't match your Linac | -                                                   |
 | Responsible Name | Up to 40 alphanumeric characters:                            | Person in charge of commissioning the current Linac |
 
-![](/home/elekta/Desktop/PotatoBite.github.io/products/MachineHandler/tuto/res/machine_info_2.png)
+![](./res/machine_info_2.png)
 
 After complete filling the fields, click the `Next` button to start defining **Beams** for your **Linac**.
 
@@ -104,7 +104,7 @@ After complete filling the fields, click the `Next` button to start defining **B
 
 #### The Beam Info Dialog ####
 
-![](/home/elekta/Desktop/PotatoBite.github.io/products/MachineHandler/tuto/res/beam_info.png)
+![](./res/beam_info.png)
 
 The Beam Info Dialog contains an Energy selector and Energy type selector. Additionally, a Beam table is showed in the downside, similar to the one that is showed in the Clinic Info Dialog. The table shows the Beams that belongs to the current selected Linac. If no Beam has been created yet, is normal that the tables is in a empty state.
 
@@ -126,7 +126,7 @@ Click the `Add Beam` button in order to add a new Beam to the currently edited L
 
 A dialog asking for mandatory information must be showed:
 
-![](/home/elekta/Desktop/PotatoBite.github.io/products/MachineHandler/tuto/res/beam_commissioning.png)
+![](./res/beam_commissioning.png)
 
 Mandatory fields must be filled in order to accept and continue to the next stage. For completing this task, values introduced in the present and forward dialog must be [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473). compliant. Some of them are showed here for reference only, for more information about the definition of these parameters, please, refer to the [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473).
 
@@ -143,25 +143,74 @@ Mandatory fields must be filled in order to accept and continue to the next stag
 
 After completing filling the parameters, click `Next` to start providing the Beam Descriptor files in the following Dialog.
 
-...to be continued.
+----
+
+
+
+#### Beam Descriptors ####
+
+The next dialog is intended to be used for directly import into database the files that contains the data of each beam. After the a beam is created, you will need to import the Beam's descriptor parameters files. 
+
+The descriptors parameters, once again according to  [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473) are:
+
+- TPR: Tissue-Phantom Ratio
+- PDD: Percent Depth Dose
+- PDD_n: Percent Depth Dose Normalized
+- Sc: Collimator Scatter Factor
+- Sp: Phantom Scatter Factor
+- WF: Wedge Factor
+- WP: Wedge Profiles
+- OAR: Off-Axis Ratio
+
+In MachineHandler you must provide the beam descriptors files as following:
+
+| File      | Containning         | Rules                                                        |
+| --------- | ------------------- | ------------------------------------------------------------ |
+| TPR.txt   | TPR or PDD or PDD_n | - Most left, most up value must be 0.                        |
+|           |                     | - 1st column is depth, descending from 0 to max_depth        |
+|           |                     | - 1st row is equivalent square field size from 0 to max_eq_field_size |
+| Sc_Sp.txt | Sc & Sp             | - 1st column are equivalent square field size from 0 to max_eq_field_size |
+|           |                     | -  2nd column is Sc                                          |
+|           |                     | - 3rd column is Sp                                           |
+| WF.txt    | WF                  | - @todo                                                      |
+| WP.txt    | WP                  | - @todo                                                      |
+| OAR.txt   | OAR                 | - @todo                                                      |
+
+To import a descriptor file into Beam parameter data, use the load button related to the parameter you want to load:
+
+!["BeamDescriptor"](./res/beam_descriptor.png)
+
+Each button opens a Dialog asking for the file to import. Some filters have been defined to support the importation process. When selecting a valid file, the label in the middle will show the rout of the selected file.
+
+The `C` button aside each label clears the value of the selected file, in case you confused and selected a wrong file in a different category or similar.
+
+Once you have selected all files you want to import, clicking the `Validate` button will trigger a series of revision of given files in order to detect anomalies or irregularities. When the tests finish, you will see some Dialogs giving information about the result of the checking process, and asking you if want to come back to (maybe) re-enter some files.
+
+!["BeamDescriptor tests"](./res/beam_descriptor2.png)
+
+If the file passes the test, its label is showed in dark green background, if it doesn't pass the test, it will be showed in a red background color, like in the previous picture.
+
+----
+
+
+
+#### Finishing the addition of beams #####
+
+Once you have validated all the files needed by the Machine you can close the Dialog accepting the prompts showed after clicking the `Validate` button.
+
+It will bring you back to the `Beams Info` dialog to keep adding beams to your editing *Linac* or maybe to complete the commissioning process .
+
+
+
+### Editing Linacs and Beams ###
+
+@todo
 
 
 
 For the full reference guide for the version of Markdown used to render Chromium
 pages, see the [reference for Gitiles Markdown][gtref].
 
-## Local preview of changes 
-
-To see how the pages you edit will look, run the following command from your
-Chromium checkout (`src/` directory) to start up a server on
-http://localhost:8080/:
-
-```bash
-python tools/md_browser/md_browser.py
-```
-
-You can then navigate to http://localhost:8080/blimp/README.md
-in your browser to see the result locally. Just refresh the page after saving
-a `*.md` file to see an updated result.
+## Forward MD reference 
 
 [gtref]: https://gerrit.googlesource.com/gitiles/+/master/Documentation/markdown.md
