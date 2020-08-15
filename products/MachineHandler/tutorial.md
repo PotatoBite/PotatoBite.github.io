@@ -3,7 +3,7 @@ title: MachineHandler
 permalink: /products/MachineHandler/tutorial
 theme: jekyll-theme-cayman
 description: A tool for comissioning
-layout: "default"
+layout: daro_cayman
 ---
 # Help
 
