@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: page
 title: MachineHandler
 permalink: /products/MachineHandler/tutorial
-markdown.toc: true
 ---
 # Help
 
