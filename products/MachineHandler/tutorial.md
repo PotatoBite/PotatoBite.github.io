@@ -9,6 +9,8 @@ A [PotatoBite](https://PotatoBite.github.io)'s product. All rights reserved.
 
 [TOC]
 
+* TOC
+{:toc}
 
 ## Intro ##
 
