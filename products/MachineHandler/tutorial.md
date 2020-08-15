@@ -1,5 +1,4 @@
 ---
-layout: page
 title: MachineHandler
 permalink: /products/MachineHandler/tutorial
 ---
