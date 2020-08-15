@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var temp_sections = getSections("static/content.txt");
-    var temp_quotes = getQuotes("static/quotes.txt"); //implement something to not parse the whole file
+    var temp_sections = getSections("assets/content.txt");
+    var temp_quotes = getQuotes("assets/quotes.txt"); //implement something to not parse the whole file
     var daily_quote = temp_quotes[Math.floor(Math.random() * 10)];
     $('#daily-quote').html(daily_quote);
 
