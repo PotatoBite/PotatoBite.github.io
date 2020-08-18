@@ -9,3 +9,4 @@
 -con lang en el front matter de los MD no me genera el html lang q quiero
 -hacer un cleaning o scape al texto de la variable lang q uso en load
 -evitar usar jquery, en el tutorial, si solo lo uso para hacer load, mejor usarlo con vanilla js
+-poner un boton para cambiar de idioma
