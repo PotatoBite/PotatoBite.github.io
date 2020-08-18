@@ -1,3 +1,11 @@
+---
+title: MachineHandler
+permalink: /products/MachineHandler/tutorial/es
+theme: jekyll-theme-cayman
+description: Una herramienta para comisionar
+layout: daro_cayman
+lang: es
+---
 # Ayuda
 
 Un producto de [PotatoBite](https://PotatoBite.github.io). Todos los derechos reservados.
@@ -18,7 +26,7 @@ Naturalmente, la primera tarea es crear una clínica. Una clínica no es más qu
 
 En el cuadro de diálogo Información de la clínica, seleccione el botón "Agregar clínica" para crear una nueva clínica:
 
-!["Agregar una clínica"](./ res / add_clinic.png)
+!["Agregar una clínica"](./res/add_clinic.png)
 
 Al crear una clínica, se crea automáticamente un archivo sqlite cifrado y no es necesaria la intervención del hombre en el proceso. Todas las tablas requeridas, valores predeterminados y plantillas se agregan automáticamente ejecutando una serie de secuencia de sentencias SQL, motivo que puede generar retrasos en el proceso, principalmente en sistemas antiguos.
 
@@ -26,7 +34,7 @@ Aparecerá un cuadro de diálogo que le pedirá un nombre para el archivo de bas
 
 Después de crear una clínica, el selector de clínicas debe actualizarse con el valor de la clínica seleccionada:
 
-!["Se ha agregado una clínica"](./ res / added_clinic.png)
+!["Se ha agregado una clínica"](./res/added_clinic.png)
 
 ----
 
@@ -74,7 +82,7 @@ Agregar un Linac es tan simple como hacer clic en el botón `Agregar Linac` desp
 
 #### El diálogo de información de la máquina ####
 
-!["MachineInfo"](./ res / machine_info.png)
+!["MachineInfo"](./res/machine_info.png)
 
 > Nota: asegúrese de utilizar **IDs únicos** para su Linac, ya que están indexados utilizando esta propiedad en la base de datos.
 
@@ -91,7 +99,7 @@ Los campos deben coincidir con las siguientes propiedades para ser aceptados.
 | Modelo personalizado | Defina un nombre de modelo personalizado si el disponible no coincide con su Linac | - |
 | Nombre responsable | Hasta 40 caracteres alfanuméricos: | Responsable de la puesta en servicio del actual Linac |
 
-![](./ res / machine_info_2.png)
+![](./res/machine_info_2.png)
 
 Después de completar los campos, haga clic en el botón `Siguiente` para comenzar a definir **Beams** para su **Linac**.
 
@@ -99,7 +107,7 @@ Después de completar los campos, haga clic en el botón `Siguiente` para comenz
 
 #### El cuadro de diálogo Beam Info ####
 
-![](./ res / beam_info.png)
+![](./res/beam_info.png)
 
 El cuadro de diálogo Beam Info contiene un selector de energía y un selector de tipo de energía. Además, se muestra una tabla Beam en la parte inferior, similar a la que se muestra en el Diálogo de Información de la clínica. La tabla muestra los Beams que pertenecen al Linac seleccionado actualmente. Si aún no se ha creado ningún Beam, es normal que las tablas estén vacías.
 
@@ -121,7 +129,7 @@ Haga clic en el botón `Add Beam` para agregar un nuevo Haz al Linac actualmente
 
 Se debe mostrar un cuadro de diálogo solicitando información obligatoria:
 
-! [] (./ res / beam_commissioning.png)
+! [] (./res/beam_commissioning.png)
 
 Los campos obligatorios deben completarse para aceptar y continuar con la siguiente etapa. Para completar esta tarea, los valores introducidos en el diálogo actual y reenvío deben ser compatibles con el [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473). Algunos de ellos se muestran aquí solo como referencia, para obtener más información sobre la definición de estos parámetros, consulte el [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473).
 
@@ -173,7 +181,7 @@ En MachineHandler, debe proporcionar los archivos de descriptores de haz de la s
 
 Para importar un archivo descriptor en los datos de parámetros de un haz, use el botón de carga relacionado con el parámetro que desea cargar:
 
-!["BeamDescriptor"](./ res / beam_descriptor.png)
+!["BeamDescriptor"](./res/beam_descriptor.png)
 
 Cada botón abre un cuadro de diálogo que solicita la importación del archivo. Se han definido algunos filtros para facilitar el proceso de importación. Al seleccionar un archivo válido, la etiqueta en el medio mostrará la ruta del archivo seleccionado.
 
@@ -181,7 +189,7 @@ El botón `C` al lado de cada etiqueta borra el valor del archivo seleccionado, 
 
 Una vez que haya seleccionado todos los archivos que desea importar, al hacer clic en el botón "Validar" se activará una serie de revisiones de archivos para detectar anomalías o irregularidades. Una vez finalizan las pruebas, verá algunos cuadros de diálogo que brindan información sobre el resultado del proceso de verificación y le preguntan si desea volver a (tal vez) ingresar otros archivos.
 
-!["Pruebas de BeamDescriptor"](./ res / beam_descriptor2.png)
+!["Pruebas de BeamDescriptor"](./res/beam_descriptor2.png)
 
 Si el archivo pasa la prueba, su etiqueta se muestra con color de fondo verde oscuro, si no pasa la prueba se mostrará en color de fondo rojo, como en la imagen anterior.
 
