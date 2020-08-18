@@ -129,7 +129,7 @@ Haga clic en el botón `Add Beam` para agregar un nuevo Haz al Linac actualmente
 
 Se debe mostrar un cuadro de diálogo solicitando información obligatoria:
 
-! [] (./res/beam_commissioning.png)
+![](./res/beam_commissioning.png)
 
 Los campos obligatorios deben completarse para aceptar y continuar con la siguiente etapa. Para completar esta tarea, los valores introducidos en el diálogo actual y reenvío deben ser compatibles con el [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473). Algunos de ellos se muestran aquí solo como referencia, para obtener más información sobre la definición de estos parámetros, consulte el [AAPM TG-114](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3521473).
 

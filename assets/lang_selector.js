@@ -5,11 +5,10 @@ $(document).ready(function() {
 
         lang = searchParams.get('lang');
 
-        $("html").load('./'+lang+'.html',function(responseTxt, statusTxt, xhr){
+        $("body").load('./'+lang+'.html #body',function(responseTxt, statusTxt, xhr){
             if(statusTxt == "error")
-                $("html").load('./en.html');
+                $("body").load('./en.html #body');
         });
     }
-    else $("html").load('./en.html');
-
+    else $("body").load('./en.html #body');
 });
