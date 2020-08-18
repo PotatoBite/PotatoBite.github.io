@@ -1,11 +1,3 @@
----
-title: MachineHandler
-permalink: /products/MachineHandler/tutorial
-theme: jekyll-theme-cayman
-description: A tool for comissioning
-layout: daro_cayman
----
-
 # Ayuda
 
 Un producto de [PotatoBite](https://PotatoBite.github.io). Todos los derechos reservados.
