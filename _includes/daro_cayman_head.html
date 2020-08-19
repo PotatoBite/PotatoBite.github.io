@@ -1,4 +1,11 @@
 {% if site.google_analytics %}
+
+<meta property="og:title" content= {% page.title %} />
+<meta property="og:site_name" content= {% site.title %}/>
+<meta property="og:description" 
+    content= {% page.description %} 
+/>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
