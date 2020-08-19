@@ -10,3 +10,4 @@
 -hacer un cleaning o scape al texto de la variable lang q uso en load
 -evitar usar jquery, en el tutorial, si solo lo uso para hacer load, mejor usarlo con vanilla js
 -poner un boton para cambiar de idioma
+-para obtener el idioma estoy tomando las primeras 2 letras del lenguage, revisar si esto es 100% seguro
