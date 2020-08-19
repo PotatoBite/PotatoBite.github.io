@@ -4,7 +4,7 @@ permalink: /products/MachineHandler/tutorial/es
 theme: jekyll-theme-cayman
 description: Una herramienta para comisionar
 layout: daro_cayman
-lang: es
+lang: es-ES
 ---
 # Ayuda
 
